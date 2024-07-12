@@ -1,0 +1,56 @@
+/* src/assets/styles.css */
+
+/* 通用样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #42b983;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  nav {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #42b983;
+  }
+  
+  nav a.router-link-active {
+    font-weight: bold;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    color: #42b983;
+  }
+  
+  .el-card {
+    margin-bottom: 20px;
+  }
+  
+  .el-form-item {
+    margin-bottom: 20px;
+  }
+  
