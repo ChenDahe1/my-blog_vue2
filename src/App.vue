@@ -1,32 +1,51 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">首页</router-link> |
-      <router-link to="/about">关于我</router-link> |
-      <router-link to="/contact">联系我</router-link> |
-      <router-link to="/login">登录</router-link> |
-      <router-link to="/register">注册</router-link>
-      <router-link to="/ArticleDetail">文章详情</router-link>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="navbar-left">
+          <router-link to="/">Home</router-link>
+          <router-link to="/projects">Projects</router-link>
+          <router-link to="/before-after">Before & Afters</router-link>
+          <router-link to="/shop">Shop Our Homes</router-link>
+          <router-link to="/rent">Rent Our Homes</router-link>
+          <router-link to="/blog">Blog</router-link>
+          <router-link to="/contact">Contact</router-link>
+        </div>
+        <div class="navbar-right">
+          <el-input placeholder="Search..." prefix-icon="el-icon-search" />
+        </div>
+      </div>
     </nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-
+  name: 'App'
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.navbar {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-right .el-input {
+  width: 200px;
 }
 </style>
